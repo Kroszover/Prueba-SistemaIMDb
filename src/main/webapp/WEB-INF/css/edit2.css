@@ -1,0 +1,156 @@
+body {
+    align-items: center;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .form {
+    background-color: #15172b;
+    border-radius: 40px;
+    box-sizing: border-box;
+    height: 800px;
+    padding: 20px;
+    width: 350px;
+  }
+  
+  .title {
+    color: rgb(196, 208, 29);
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+  
+  .subtitle {
+    color: #eee;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+  }
+  
+  .input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .ic1 {
+    margin-top: 40px;
+  }
+  
+  .ic2 {
+    margin-top: 30px;
+  }
+  
+  .input {
+    background-color: #1b1c27;
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: rgb(196, 208, 29);
+    font-size: 18px;
+    height: 100%;
+    outline: 0;
+    padding: 4px 20px 0;
+    width: 100%;
+  }
+  
+  .cut {
+    background-color: #15172b;
+    border-radius: 10px;
+    height: 20px;
+    left: 20px;
+    position: absolute;
+    top: -20px;
+    transform: translateY(0);
+    transition: transform 200ms;
+    width: 76px;
+  }
+  
+  .cut-short {
+    width: 50px;
+  }
+  
+  .input:focus ~ .cut,
+  .input:not(:placeholder-shown) ~ .cut {
+    transform: translateY(8px);
+  }
+  
+  .placeholder {
+    color: rgb(196, 208, 29);
+    font-family: sans-serif;
+    left: 20px;
+    line-height: 14px;
+    pointer-events: none;
+    position: absolute;
+    transform-origin: 0 50%;
+    transition: transform 200ms, color 200ms;
+    top: 20px;
+  }
+  
+  .input:focus ~ .placeholder,
+  .input:not(:placeholder-shown) ~ .placeholder {
+    transform: translateY(-30px) translateX(10px) scale(0.75);
+  }
+  
+  .input:not(:placeholder-shown) ~ .placeholder {
+    color: rgb(243, 215, 75);
+  }
+  
+  .input:focus ~ .placeholder {
+    color: #dc2f55;
+  }
+  
+  .submit {
+    background-color: rgb(11, 10, 2);
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: rgb(196, 208, 29);
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 38px;
+    // outline: 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .submit:active {
+    background-color: #06b;
+  }
+
+  .star{
+    float:left;
+    height: 100%;
+    width: 20%;
+  }
+  
+  #container{
+    background-image: url('http://img1.targetimg1.com/wcsstore/TargetSAS/11_05_2013_06_55/images/ratings-large-sprite-r5.gif');
+    width: 226px;
+    height: 50px;
+    background-color: #c34;
+    background
+  }
+
+  .reviewStars{
+    text-align: right;
+    height: 200px;
+    width: 200px;
+    color: yellow;
+  }
+
+  .rating{
+    border-radius: 12px;
+    border: 0;
+    font-family: sans-serif;
+    color: rgb(196, 208, 29);
+    font-size: 18px;
+    outline: 0;
+    padding: 4px 10px 0;
+    width: 85%;
+  }
