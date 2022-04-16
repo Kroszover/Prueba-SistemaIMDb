@@ -13,3 +13,6 @@ Interfaces
 4.- RoleRepository
 Todas estas interfaces deben tener al menos el método List<T> findAll(), en donde ‘T’ es el tipo de objeto que retorna (e.g. List<User> findAll();). Estas interfaces deben extender de JpaRepository o CrudRepository según corresponda la configuración del proyecto.
 PD: De momento entregar valores de salida test (no es necesario aun BD, eso lo realizaremos en la próxima sesión con desarrollo de desafío , ahí veremos la integración con la capa de servicio y acceso a datos)
+
+
+//Realizado, se dejan los parametros instanciados aunqeu aún no se crea la base de datos para adelantar trabajo. 
