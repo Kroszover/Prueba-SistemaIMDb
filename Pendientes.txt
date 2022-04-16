@@ -1,0 +1,15 @@
+Martes     12/04/2022  - Seguridad 2 (Desafío)
+Hito: Integración de  Modelos e Interfaces.
+Detalle: Esto implica la creación de los paquetes respectivos para modelos e interfaces,
+Respecto de modelos estos son los siguientes:
+1.- User
+2.- Show
+3.- Rating
+4.- Role / Crear enum Role
+Interfaces
+1.- UserRepository
+2.- ShowRepository
+3.- RatingRepository
+4.- RoleRepository
+Todas estas interfaces deben tener al menos el método List<T> findAll(), en donde ‘T’ es el tipo de objeto que retorna (e.g. List<User> findAll();). Estas interfaces deben extender de JpaRepository o CrudRepository según corresponda la configuración del proyecto.
+PD: De momento entregar valores de salida test (no es necesario aun BD, eso lo realizaremos en la próxima sesión con desarrollo de desafío , ahí veremos la integración con la capa de servicio y acceso a datos)
